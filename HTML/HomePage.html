@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home - Budget Buddy</title>
+  <link rel="stylesheet" href="../CSS/HomePage.css">     
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+  
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="header_container">
+
+      <div class="header">
+        <h1 class="Budget_Buddy_Header">Budget Buddy</h1>
+      </div>
+
+    </div>
+
+    <div class="column_container">
+
+      <div class="left_column">
+
+        <h2 id="insert_text">Insert Expenses</h2>
+
+        <form id="pieChartForm">
+
+          <label for="category1"> Food & Drink: </label>
+          <input type="number" id="value1" name="foodexpense"min="0"  placeholder="Enter your expenses here">
+
+          <br>
+
+          <label for="category2"> Bills & Payments: </label>
+          <input type="number" id="value2" name="BillPay" min="0" placeholder="Enter your expenses here">
+
+          <br>
+
+          <label for="category3"> Entertainment: </label>
+          <input type="number" id="value3" name="Ent" min="0" placeholder="Enter your expenses here">
+
+          <br>
+
+          <label for="category4"> Other: </label>
+          <input type="number" id="value4" name="other"min="0"  placeholder="Enter your expenses here">
+
+          <button id="submit_button" type="submit" onclick="appendParagraphText('appendToMe')">Submit</button>
+
+        </form>
+
+            <div class="date-range-input">
+        <input type="date" id="startDate" name="start" required>
+        <input type="date" id="endDate" name="end" required>
+        <input type="button" id="date_submit" value="Submit Range"></button>
+    </div>
+
+        <span id="expenseList">
+          <p>Total expenses: $500</p>
+              <p>Food & Drink: $100</p>
+              <p>Bills & Payments: $150</p>
+              <p>Entertainment: $150</p>
+              <p>Other: $100</p>
+        </span>
+              
+            </ol>
+      </div>
+
+      <div class="middle_column">
+
+        <h2 id="graphs_text">Graphs</h2>
+
+        <div id="chartContainer">
+          <canvas id="myPieChart" width="200" height="200"></canvas>
+          <canvas id="myBarChart" width="400" height="200"></canvas>
+        </div>
+
+      </div>
+
+      <div class="right_column">
+
+        <h2 id="nav_panel_text">Recommendations</h2>
+        
+      <div class="dropdown">
+      <button class="dropdown-button">Menu</button>
+        <ul class="dropdown-list">
+            <li><button>Payments</button></li>
+            <li><button>Budget</button></li>
+            <li><button>Settings</button></li>
+            <li><button>Help</button></li>
+        </ul>
+      </div>
+
+        <p id="Education"><a href="https://www.asu.edu/" target="_blank">Click Here for more Educational Resources</a> 
+      </p>
+        <br>
+        <p id="Habits"><a href="https://www.lexingtonlaw.com/blog/credit-cards/college-student-spending-habits.html" target="_blank">Click Here for more info on spending habits!</a> 
+      </p>
+        <br>
+        <p id="Invest"><a href="https://www.bankrate.com/investing/best-ways-to-invest-for-college-students/" target="_blank">Click Here for more info on Investing!</a>
+        
+        
+        <button id="logout_button" onclick="location.href='../index.html'">Sign Out</button> 
+        
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="../JS/HomePageScript.js"></script>
+
+</body>
+
+</html>

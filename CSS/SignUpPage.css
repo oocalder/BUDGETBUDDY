@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  animation: floatUp 1s ease-in-out forwards;
+}
+
+h2 {
+  color: black;
+  cursor: default;
+  font-weight: bold;
+  text-align: center;
+}
+
+a {
+  transition: .1s;
+  color: black;
+}
+
+a:visited {
+  color: black;
+
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+input {
+  width: 15em;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  
+}
+
+hr {
+  width: 30em;
+}
+
+/* Identifiers */
+#BB_Logo {
+  width: 200px;
+  display: block;
+  height: 200px;
+  margin: auto;
+}
+
+#signup_button {
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: #E9967A;
+  color: black;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: .2s;
+  width: 10em
+}
+
+#signup_button:hover {
+
+  background-color: #E2672A;
+  transition: .2s;
+
+}
+
+/* animations */
+@keyframes floatUp {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

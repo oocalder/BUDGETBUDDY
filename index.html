@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Budget Buddy</title>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+
+  <!-- link to css file -->
+  <link rel="stylesheet" href="CSS/LandingPage.css">
+
+</head>
+
+<body>
+
+  <!-- putting the entire page into a container -->
+  <div class="container">
+
+    <!-- this container covers 70% of the width page from left to right -->
+    <div class="left_container">
+
+      <!-- this container holds the typed-text animation -->
+      <div class="typing-container">
+        <p id="typing-text"></p>
+      </div>
+
+    </div>
+    <!-- container that covers remaining 30% of width to the right -->
+    <div class="right_container">
+
+      <h2 id="Get_Started_Text">Get Started Today</h2>
+
+      <button class="login_button" onclick="location.href='HTML/LoginPage.html'">Login</button>
+      <button class="signup_button" onclick="location.href='HTML/SignUpPage.html'">Sign Up</button>
+
+      <img src="Images/asulogo.png" id="ASU_Logo" alt="ASU Logo">
+
+      <p id="homepage_footer"><a href="https://www.asu.edu/" target="_blank">ASU Website</a> | <a href="TXT/terms.txt"
+          target="_blank">Terms of Use</a>
+      </p>
+
+    </div>
+
+  </div>
+
+  <script src="JS/LandingPageScript.js"></script>
+
+</body>
+
+</html>
